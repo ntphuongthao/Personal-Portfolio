@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Project from './components/Project/Project';
 import About from './components/About/About';
@@ -11,22 +11,6 @@ export default function App() {
     <Router>
       <div>
         <NavigationBar />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/project">Project</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-          </ul>
-        </nav>
         <Routes>
           <Route path="/" component={Home} />
           <Route path="/project" component={Project} />
