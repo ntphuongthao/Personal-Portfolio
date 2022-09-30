@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-body {
+body[data-theme='dark'] {
   margin: 0;
   font-family: 'Raleway', serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(25, 25, 112), rgb(20 15 35));
+}
+
+body[data-theme='light'] {
+  margin: 0;
+  font-family: 'Raleway', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(250, 213, 165), white);
 }
 
 .logo {
@@ -13,8 +21,13 @@ body {
 
 /* HOMEPAGE */
 
-.home {
+body[data-theme='dark'] .home {
   color: white;
+  margin-top: 150px;
+}
+
+body[data-theme='light'] .home {
+  color: black;
   margin-top: 150px;
 }
 
@@ -36,15 +49,26 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.tech-stack-icon {
+body[data-theme='dark'] .tech-stack-icon {
   display: table important!;
   padding: 1rem 5rem;
   border: 1.5px solid white;
   border-radius: 10px;
 }
 
-.tech-stack-icon:hover {
+body[data-theme='light'] .tech-stack-icon {
+  display: table important!;
+  padding: 1rem 5rem;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+
+body[data-theme='dark'] .tech-stack-icon:hover {
   box-shadow: 3px 4px 3px 2px white !important;
+}
+
+body[data-theme='light'] .tech-stack-icon:hover {
+  box-shadow: 3px 4px 3px 2px black !important;
 }
 
 .social-media-container {
@@ -56,6 +80,13 @@ body {
   margin-bottom: 2.5rem;
 }
 
+body[data-theme='dark'] .social-media-light {
+  color: white;
+}
+
+body[data-theme='light'] .social-media-light {
+  color: black;
+}
 /* RESUME */
 
 .resume-row {

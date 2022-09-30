@@ -15,9 +15,9 @@ export default function SocialMedia() {
           <div>
             <a
               href="https://github.com/ntphuongthao"
-              style={{ color: 'white' }}
               target="_blank"
               rel="noopener noreferrer"
+              className="social-media-light"
             >
               <AiFillGithub size={60} />
             </a>
@@ -27,9 +27,9 @@ export default function SocialMedia() {
           <div>
             <a
               href="https://www.linkedin.com/in/nguyentpthao/"
-              style={{ color: 'white' }}
               target="_blank"
               rel="noopener noreferrer"
+              className="social-media-light"
             >
               <AiFillLinkedin size={60} />
             </a>
