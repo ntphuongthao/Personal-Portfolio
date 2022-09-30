@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../Assets/thao-logo.png';
+import { HiOutlineHome, HiOutlineDocumentText } from 'react-icons/hi';
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
 export default function NavigationBar() {
   return (
@@ -13,9 +15,15 @@ export default function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/project">Project</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
+            <Nav.Link href="/project">
+              <AiOutlineFundProjectionScreen /> Project
+            </Nav.Link>
+            <Nav.Link href="/resume">
+              <HiOutlineDocumentText /> Resume
+            </Nav.Link>
+            <Nav.Link href="/about">
+              <HiOutlineHome /> More about me...
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
