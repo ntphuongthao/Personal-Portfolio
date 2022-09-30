@@ -4,9 +4,24 @@ body {
   font-family: 'Raleway', serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-image: linear-gradient(to left, rgb(25, 25, 112), rgb(20 15 35));
 }
 
 .logo {
   width: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  color: white;
+  background-color: rgb(10, 4, 22);
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+}
+
+.modifyFontsize {
+  font-size: 0.75rem;
 }

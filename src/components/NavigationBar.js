@@ -5,7 +5,7 @@ import logo from '../Assets/thao-logo.png';
 
 export default function NavigationBar() {
   return (
-    <Navbar fixed="top" bg="light" expand="lg">
+    <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/home">
           <img src={logo} className="logo" alt="brand" />
