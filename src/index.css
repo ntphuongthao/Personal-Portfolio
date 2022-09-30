@@ -18,6 +18,27 @@ body {
   margin-top: 150px;
 }
 
+.tech-stack-container {
+  margin-top: 4rem;
+}
+
+.tech-stack-row-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-stack-icon-col {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-stack-icon {
+  padding: 1rem 5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
 /* RESUME */
 
 .resume-row {

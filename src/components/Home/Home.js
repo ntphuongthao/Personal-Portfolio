@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaLaptopCode } from 'react-icons/fa';
+import TechStack from './TechStack';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <FaLaptopCode size={170} />
         </Col>
       </Row>
+      <TechStack />
     </Container>
   );
 }
