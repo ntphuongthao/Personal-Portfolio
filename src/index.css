@@ -11,6 +11,13 @@ body {
   width: 2rem;
 }
 
+/* HOMEPAGE */
+
+.home {
+  color: white;
+  margin-top: 150px;
+}
+
 /* FOOTER */
 
 .footer {

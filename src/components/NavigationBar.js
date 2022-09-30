@@ -7,7 +7,7 @@ export default function NavigationBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <img src={logo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

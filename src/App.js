@@ -13,10 +13,10 @@ export default function App() {
       <NavigationBar />
       <Router>
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/project" component={Project} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
       <Footer />
