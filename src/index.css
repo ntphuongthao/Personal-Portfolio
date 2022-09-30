@@ -12,7 +12,11 @@ body[data-theme='light'] {
   font-family: 'Raleway', serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(250, 213, 165), white);
+  background-image: linear-gradient(
+    to left,
+    rgb(234, 221, 202),
+    rgb(255, 222, 173)
+  );
 }
 
 .logo {
