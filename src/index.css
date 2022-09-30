@@ -22,21 +22,38 @@ body {
   margin-top: 4rem;
 }
 
-.tech-stack-row-container {
-  margin-bottom: 2rem;
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.home-center {
   display: flex;
   justify-content: center;
 }
 
-.tech-stack-icon-col {
-  display: flex;
-  justify-content: center;
+.tech-stack-row-container {
+  margin-bottom: 2.5rem;
 }
 
 .tech-stack-icon {
+  display: table important!;
   padding: 1rem 5rem;
-  border: 1px solid white;
+  border: 1.5px solid white;
   border-radius: 10px;
+}
+
+.tech-stack-icon:hover {
+  box-shadow: 3px 4px 3px 2px white !important;
+}
+
+.social-media-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.social-media-row-container {
+  margin-bottom: 2.5rem;
 }
 
 /* RESUME */
