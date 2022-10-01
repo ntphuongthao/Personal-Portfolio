@@ -1,6 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { FaLaptopCode } from 'react-icons/fa';
 import CustomSwitch from './CustomSwitch';
+import AutoPosition from './AutoPosition';
 
 export default function Introduction() {
   return (
@@ -18,6 +19,9 @@ export default function Introduction() {
       </Col>
       <Col md={{ offset: 1 }}>
         <FaLaptopCode className="light-color" size={170} />
+        <Row>
+          <AutoPosition />
+        </Row>
         <Row>
           <CustomSwitch />
         </Row>
