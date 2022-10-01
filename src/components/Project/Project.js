@@ -27,14 +27,16 @@ export default function Project() {
       <Row className="project-row">
         {repoList.map((repo) => {
           if (repo.stargazers_count >= 1) {
-            console.log(repo);
+            // console.log(repo);
             return (
-              <Col xs={4} style={{ marginBottom: '2rem' }}>
+              <Col xs={4} style={{ marginBottom: '3.5rem' }}>
                 <ProjectCard
                   name={repo.name}
                   link={repo.html_url}
                   description={repo.description}
                   updatedAt={repo.updated_at}
+                  svnURL={repo.svn_url}
+                  languagesURL={repo.languages_url}
                 />
               </Col>
             );
