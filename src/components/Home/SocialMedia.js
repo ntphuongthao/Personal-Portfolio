@@ -8,7 +8,11 @@ export default function SocialMedia() {
         sx={12}
         className="social-media-row-container home-title home-center"
       >
-        My Social Platforms
+        <div className="home-center">
+          <h1>
+            My <strong className="highlight">Social Platforms</strong>
+          </h1>
+        </div>
       </Row>
       <Row sx={12} className="social-media-row-container">
         <Col className="home-center">

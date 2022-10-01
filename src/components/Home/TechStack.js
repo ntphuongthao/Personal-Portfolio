@@ -6,8 +6,12 @@ import { DiRuby } from 'react-icons/di';
 export default function TechStack() {
   return (
     <Row className="tech-stack-container">
-      <Row sx={12} className="tech-stack-row-container home-title home-center">
-        Tech Stack that I use
+      <Row sx={12} className="tech-stack-row-container home-title">
+        <div className="home-center">
+          <h1>
+            <strong className="highlight">Tech Stack </strong>that I use
+          </h1>
+        </div>
       </Row>
       <Row className="tech-stack-row-container">
         <Col xs={3} className="home-center">

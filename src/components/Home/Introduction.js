@@ -8,13 +8,21 @@ export default function Introduction() {
     <Row>
       <Col xs={9}>
         <Row className="light-color">
-          Hi, I'm Thao Nguyen - a Vietnamese sophomore at DePauw University.
-          Working toward a career in Software Engineering.
+          <h4>
+            Hi, I'm Thao Nguyen - a Vietnamese sophomore at{' '}
+            <strong className="highlight">DePauw University</strong>. Working
+            toward a career in{' '}
+            <strong className="highlight">Software Engineering</strong>.
+            <br />
+          </h4>
         </Row>
         <Row className="light-color" md={{ offset: 1 }}>
-          Developer with experience in JavaScript/SERN
-          (SQL-Express.js-React.js-Node.js), Ruby/Ruby on Rails, Databases,
-          Git/Github.
+          <h4>
+            <strong className="highlight">Developer</strong> with experience in{' '}
+            <strong className="highlight">JavaScript/MERN</strong>{' '}
+            (MongoDB-Express.js-React.js-Node.js) , Ruby/Ruby on Rails,
+            Databases, Git/Github.
+          </h4>
         </Row>
       </Col>
       <Col md={{ offset: 1 }}>
