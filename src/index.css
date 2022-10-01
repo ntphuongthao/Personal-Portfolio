@@ -103,6 +103,15 @@ body[data-theme='light'] .social-media-light {
   margin-top: 30px;
 }
 
+/* PROJECTS */
+.project-container {
+  margin-top: 6rem;
+}
+
+.project-row {
+  margin-top: 2rem;
+}
+
 /* FOOTER */
 
 .footer {
