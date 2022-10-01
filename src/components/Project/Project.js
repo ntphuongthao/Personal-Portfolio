@@ -1,33 +1,47 @@
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
+import axios from 'axios';
 
 export default function Project() {
-  const projects = [
-    {
-      name: 'Flight Booking',
-      link: 'https://github.com/ntphuongthao/Flight-Booking',
-      description:
-        'This project will replicate a one-way flight booker, allowing users to browse their flight with origin, destination, datetime, and the number of tickets.',
-    },
-    {
-      name: 'Facebook',
-      link: 'https://github.com/ntphuongthao/Facebook',
-      description:
-        "There are partial mockups of Facebook functions in this project. This project involved 4 main models: Users, Posts, Comments, and Likes. The following advanced features were implemented to increase the complexity and flexibility of this project - such as 'friending, friend request, login with real Facebook/Github account, feeding with all your posts and your friends' posts'",
-    },
-  ];
+  const API = 'https://api.github.com';
+  const allReposAPI = `${API}/users/ntphuongthao/repos?sort=updated&direction=desc`;
+
+  const [repoList, setRepolist] = useState([]);
+  const fetchRepos = async () => {
+    try {
+      const response = await axios.get(allReposAPI);
+      setRepolist([...response.data]);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+  fetchRepos();
   return (
     <Container className="project-container">
+      <Row className="project-title">
+        <h1 style={{ display: 'flex', justifyContent: 'center' }}>
+          RECENT PROJECTS
+        </h1>
+      </Row>
       <Row className="project-row">
-        {projects.map((project) => (
-          <Col>
-            <ProjectCard
-              name={project.name}
-              link={project.link}
-              description={project.description}
-            />
-          </Col>
-        ))}
+        {repoList.map((repo) => {
+          if (repo.stargazers_count >= 1) {
+            console.log(repo);
+            return (
+              <Col xs={4} style={{ marginBottom: '2rem' }}>
+                <ProjectCard
+                  name={repo.name}
+                  link={repo.html_url}
+                  description={repo.description}
+                  updatedAt={repo.updated_at}
+                />
+              </Col>
+            );
+          } else {
+            return <></>;
+          }
+        })}
       </Row>
     </Container>
   );

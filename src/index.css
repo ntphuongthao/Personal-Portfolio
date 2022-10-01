@@ -113,6 +113,10 @@ body[data-theme='light'] .social-media-light {
   margin-top: 6rem;
 }
 
+.project-title {
+  color: white;
+}
+
 .project-row {
   margin-top: 2rem;
 }
