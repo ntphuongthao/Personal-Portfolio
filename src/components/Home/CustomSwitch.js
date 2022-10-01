@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Container, Col } from 'react-bootstrap';
 import Switch from 'react-switch';
+import { MdNightlight } from 'react-icons/md';
+import { BsSunFill } from 'react-icons/bs';
 
 export default function CustomSwitch() {
   const [checked, setChecked] = useState(false);
@@ -28,7 +30,12 @@ export default function CustomSwitch() {
     >
       <Col sx={9}>Set Theme:</Col>
       <Col sx={3}>
-        <Switch onChange={handleSwitch} checked={checked} />
+        <Switch
+          onChange={handleSwitch}
+          checked={checked}
+          uncheckedIcon={<MdNightlight />}
+          checkedIcon={<BsSunFill />}
+        />
       </Col>
     </Container>
   );
