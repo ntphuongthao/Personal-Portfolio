@@ -2,8 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../Assets/thao-logo.png';
-import { HiOutlineDocumentText } from 'react-icons/hi';
-import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
+// import { HiOutlineDocumentText } from 'react-icons/hi';
+// import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
 export default function NavigationBar() {
   return (
