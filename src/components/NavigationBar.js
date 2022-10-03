@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../Assets/thao-logo.png';
-import { HiOutlineHome, HiOutlineDocumentText } from 'react-icons/hi';
+import { HiOutlineDocumentText } from 'react-icons/hi';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
 export default function NavigationBar() {
@@ -20,9 +20,6 @@ export default function NavigationBar() {
             </Nav.Link>
             <Nav.Link href="/resume">
               <HiOutlineDocumentText /> Resume
-            </Nav.Link>
-            <Nav.Link href="/about">
-              <HiOutlineHome /> More about me...
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

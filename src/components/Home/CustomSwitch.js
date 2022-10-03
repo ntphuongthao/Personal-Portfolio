@@ -28,8 +28,10 @@ export default function CustomSwitch() {
         alignItems: 'center',
       }}
     >
-      <Col sx={9}>Set Theme:</Col>
-      <Col sx={3}>
+      <Col sx={8} style={{ display: 'flex', justifyContent: 'start' }}>
+        Set Theme:
+      </Col>
+      <Col sx={4}>
         <Switch
           onChange={handleSwitch}
           checked={checked}

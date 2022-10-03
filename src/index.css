@@ -151,8 +151,12 @@ body[data-theme='light'] .social-media-light {
   margin-top: 6rem;
 }
 
-.project-title {
+body[data-theme='dark'] .project-title {
   color: white;
+}
+
+body[data-theme='light'] .project-title {
+  color: black;
 }
 
 .project-row {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
+import CustomSwitch from '../Home/CustomSwitch';
 import axios from 'axios';
 
 export default function Project() {
@@ -19,10 +20,18 @@ export default function Project() {
   fetchRepos();
   return (
     <Container className="project-container">
-      <Row className="project-title">
-        <h1 style={{ display: 'flex', justifyContent: 'center' }}>
-          RECENT PROJECTS
-        </h1>
+      <Row
+        className="project-title"
+        style={{ justifyContent: 'space-between' }}
+      >
+        <Col xs={8}>
+          <h1 style={{ display: 'flex', justifyContent: 'start' }}>
+            RECENT PROJECTS
+          </h1>
+        </Col>
+        <Col xs={2} style={{ padding: '0px' }}>
+          <CustomSwitch />
+        </Col>
       </Row>
       <Row className="project-row">
         {repoList.map((repo) => {
