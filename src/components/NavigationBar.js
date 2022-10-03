@@ -15,12 +15,12 @@ export default function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/project">
+            {/* <Nav.Link href="/project">
               <AiOutlineFundProjectionScreen /> Project
             </Nav.Link>
             <Nav.Link href="/resume">
               <HiOutlineDocumentText /> Resume
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
