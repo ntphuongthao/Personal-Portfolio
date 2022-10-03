@@ -1,10 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import moment from 'moment';
 import ProjectCardButtons from './ProjectCardButtons';
-import Languages from './Languages';
 
 function ProjectCard(props) {
-  const { name, description, link, updatedAt, svnURL, languagesURL } = props;
+  const { name, description, link, updatedAt, svnURL } = props;
   return (
     <Card>
       <Card.Header>
@@ -20,10 +19,6 @@ function ProjectCard(props) {
         <Card.Text>
           <strong>Updated at: </strong>
           {moment(updatedAt).format('MMMM Do, YYYY.')}
-        </Card.Text>
-        <Card.Text>
-          <strong>Languages: </strong>
-          {/* <Languages languagesURL={languagesURL} /> */}
         </Card.Text>
         <ProjectCardButtons githubLink={link} svnURL={svnURL} />
       </Card.Body>

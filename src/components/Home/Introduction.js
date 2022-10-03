@@ -9,7 +9,11 @@ export default function Introduction() {
       <Col xs={9}>
         <Row className="light-color">
           <h4>
-            Hi, I'm Thao Nguyen - a Vietnamese sophomore at{' '}
+            Hi, I'm Thao Nguyen{' '}
+            <span className="wave" role="img" aria-labelledby="wave">
+              👋🏻
+            </span>
+            <br /> I'm a Vietnamese sophomore at{' '}
             <strong className="highlight">DePauw University</strong>. Working
             toward a career in{' '}
             <strong className="highlight">Software Engineering</strong>.
