@@ -1,5 +1,5 @@
 <h1>
-  Thao Nguyen Portfolio<br/>
+  Thao Nguyen Portfolio (<a href="https://ntphuongthao.netlify.app">Live Preview</a>)
 </h1>
 
 <br/>
